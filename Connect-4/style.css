@@ -1,0 +1,36 @@
+.grid {
+  border: 5px solid;
+  border-radius: 10px;
+  height: 120px;
+  width: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  animation-name: border-color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes border-color {
+    0% {border-color: #00ff6a; color:#00ff6a;}
+    16% {border-color: #00f7ff; color:#00f7ff}
+    50% {border-color: #ff00c8; color:#ff00c8}
+    84% {border-color: #00f7ff; color:#00f7ff}
+    100% {border-color: #00ff6a; color:#00ff6a;}
+    
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.player-one {
+  background-color: rgb(90, 1, 131);
+  border-radius: 10px;
+}
+
+.player-two {
+  background-color: rgb(255, 230, 0);
+  border-radius: 10px;
+}
