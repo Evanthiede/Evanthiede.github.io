@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const square3 = squares[winningArrays[y][2]]
       const square4 = squares[winningArrays[y][3]]
 
-      //check those squares to see if they all have the class of player-one
+      //player 1
       if (
         square1.classList.contains('player-one') &&
         square2.classList.contains('player-one') &&
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         result.innerHTML = 'Player One Wins!'
       }
-      //check those squares to see if they all have the class of player-two
+      //player 2
       if (
         square1.classList.contains('player-two') &&
         square2.classList.contains('player-two') &&
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   for (let i = 0; i < squares.length; i++) {
     squares[i].onclick = () => {
-      //if the square below your current square is taken, you can go ontop of it
+
       if (squares[i + 7].classList.contains('taken') &&!squares[i].classList.contains('taken')) {
         if (currentPlayer == 1) {
           squares[i].classList.add('taken')
